@@ -1,0 +1,19 @@
+services:
+  ubuntu:
+    container_name: ubuntu
+    image: ubuntu
+    ports: 
+      - "190:80"
+      - "191:81"
+    networks: 
+      - net1
+      - net2
+    volumes: 
+      - volume1:/usr/
+      
+networks: 
+  net1:  
+  net2:
+volumes:
+  volume1:
+
